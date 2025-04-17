@@ -92,7 +92,7 @@ crime_map = folium.Map(location=[map_df['LAT'].mean(), map_df['LON'].mean()], zo
 heat_data = [[row['LAT'], row['LON']] for _, row in map_df.iterrows()]
 HeatMap(heat_data).add_to(crime_map)
 crime_map.save("crime_hotspots_map.html")
-print(" Crime hotspot map saved as: crime_hotspots_map.html")
+print("✅ Crime hotspot map saved as: crime_hotspots_map.html")
 
 area_crime = df['AREA_NAME'].value_counts().head(10)
 plt.figure()
