@@ -96,3 +96,21 @@ Run the script or notebook to generate all visualizations
 
 Open crime_hotspots_map.html in a browser to explore the interactive map
 
+## Project Overview
+
+**Crime Data Analysis & Visualization**
+
+This script performs analysis and visualization on a cleaned crime dataset. It covers various tasks including data cleaning, exploratory data analysis (EDA), and the generation of multiple visualizations to understand crime patterns across several dimensions.
+
+**Key functionalities include:**
+- **Loading and cleaning the dataset from an Excel file:** The script reads in the dataset and standardizes column names.
+- **Standardizing column names and converting date/time fields:** Dates, times, and columns are transformed for easier analysis.
+- **Displaying basic dataset information:** It outputs the overview, head, tail, summary statistics, column names, shape, and null values.
+- **Creating new time-based columns:** Additional fields like HOUR, YEAR, and MONTH are derived from the date information.
+- **Calculating and visualizing correlation and covariance matrices:** These assist in understanding relationships between variables.
+- **Analyzing crime trends over time:** Uses line charts, histograms (crime frequency by hour), and heatmaps (seasonal trends).
+- **Generating geographic visualizations with Folium:** Includes an interactive heatmap for crime hotspots and a bar chart for top high-crime areas.
+- **Visualizing crime type distributions:** Uses bar charts and treemaps to show the frequency of different crime types.
+- **Breaking down victim demographics:** Analyzes age, gender, and ethnicity with histograms and bar plots.
+- **Analyzing crime resolution statuses:** Displays donut charts and stacked bar plots highlighting case clearances by crime type.
+
